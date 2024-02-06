@@ -1,0 +1,155 @@
+/*.poppins-regular {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .poppins-semibold {
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+  }
+  
+  .poppins-extralight {
+    font-family: "Poppins", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+  }
+- Red: hsl(0, 78%, 62%)
+- Cyan: hsl(180, 62%, 55%)
+- Orange: hsl(34, 97%, 64%)
+- Blue: hsl(212, 86%, 64%)
+
+- Very Dark Blue: hsl(234, 12%, 34%)
+- Grayish Blue: hsl(229, 6%, 66%)
+- Very Light Gray: hsl(0, 0%, 98%)
+
+*/  
+
+:root{
+    --ff-sans: 'Poppins', sans-serif;
+
+    --fw-light: 200;
+    --fw-normal: 400;
+    --fw-bold: 600;
+
+    --fs-400: 0.9375rem;
+    --fs-500: 1.25rem;
+    --fs-600: 1.625rem;
+    --fs-900: 2.5rem;
+
+    --clr-neutral-900: hsl(234, 12%, 34%);
+    --clr-neutral-400: hsl(229, 6%, 66%);
+    --clr-neutral-100: hsl(0, 0%, 98%);
+    --clr-cyan: hsl(180, 62%, 55%);
+    --clr-red: hsl(0, 78%, 62%);
+    --clr-blue: hsl(212, 86%, 64%);
+    --clr-orange: hsl(34, 97%, 64%);
+    
+  }
+
+
+*, *::before, *::after {
+    box-sizing: border-box;
+  }
+
+  body {
+    margin: 0;
+    background-color: #fafafa;
+    padding-block-end: 5rem;
+  }
+
+  img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+  }
+ 
+  p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+  }
+
+  html {
+    font-family: var(--ff-sans);
+    font-weight: var(--fw-normal);
+    line-height: 1.7;
+    color: var(--clr-neutral-400);
+    
+  }
+
+  h1, h2, h3 {
+    line-height: 1.1;
+    color: var(--clr-neutral-900)
+  }
+  
+  .wrapper {
+    max-width: 1095px;
+    margin-inline: auto;
+  }
+  
+  .wrapper--narrow {
+    max-width: 550px;
+    
+  }
+
+  header {
+    text-align: center;
+    margin-block-start: 6em;
+    margin-block-end: 5em;
+    /*border: 2px solid red;*/
+    
+}
+
+  .header--span {
+    /*border: 2px solid blue;*/
+    /*line-height: 2em;                        perguntar*/
+  }
+
+.layout-grid {
+  --gap: 2rem;
+  display: flex;
+  gap: var(--gap);
+   
+
+}
+
+.layout-grid > * {                           /*> * == todos os filhos diretos*/
+  flex: 1;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  gap: var(--gap);
+  justify-content: center;
+}
+
+.card {
+  padding: 30px;
+  width: 350px;
+  --br: 0.3rem;
+  background-color: #ffffff;
+  border-top: var(--br) solid;
+  border-radius: var(--br);
+  box-shadow: 0 1rem 1rem rgba(93, 99, 180, 0.178);
+}
+
+.border-cyan {
+  border-color: var(--clr-cyan);
+}
+.border-red {
+  border-color: var(--clr-red);
+}
+.border-orange {
+  border-color: var(--clr-orange);
+}
+.border-blue {
+  border-color: var(--clr-blue);
+}
+
+
+
+
+/*--clr-cyan: hsl(180, 62%, 55%);
+--clr-red: hsl(0, 78%, 62%);
+--clr-blue: hsl(212, 86%, 64%);
+--clr-orange: hsl(34, 97%, 64%);
